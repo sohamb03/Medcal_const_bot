@@ -1,0 +1,39 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "datatable&SequenceX_1",
+        "data&SequenceX_1",
+        "z&SequenceX_1",
+        "out_AssistantAnswer_from_ChatGPT1&SequenceX_1",
+        "ques&SequenceX_1",
+        "API_val&SequenceX_1",
+        "str_json_inp&SequenceX_1",
+        "doubt&SequenceX_1",
+        "changed_var&SequenceX_1",
+        "a&SequenceX_1",
+        "Str_Json_Output&SequenceX_1",
+        "p&SequenceX_1",
+        "q&SequenceX_1",
+        "medical_dept&SequenceX_1",
+        "doubt1&SequenceX_1",
+        "doubt2&SequenceX_1",
+        "isemailsent&SequenceX_1",
+        "abc&SequenceX_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    }
+  ]
+}

@@ -1,0 +1,632 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,1088" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CBC4E50AE12_openai_sub_deployments_sub_chat_sub_completions_Create.Bundle;assembly=CBC4E50AE12_openai_s.FllR01im1jH1iHriM4zVHBL" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="96">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>APITriggerIRPA</x:String>
+      <x:String>UiPath.Web</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>UiPath.DesktopTriggers.Activities</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.DesktopTriggers.Activities.Helpers</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.AzureActiveDirectory</x:String>
+      <x:String>UiPath.AzureActiveDirectory.Activities</x:String>
+      <x:String>UiPath.ConnectionClient.Contracts</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Entity</x:String>
+      <x:String>UiPath.IntegrationService.Infrastructure.Descriptor</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Enums</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Telemetry</x:String>
+      <x:String>UiPath.BAF.Infrastructure</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Connection</x:String>
+      <x:String>UiPath.MicrosoftAzureOpenAI.IntegrationService.Activities</x:String>
+      <x:String>UiPath.IntegrationCore.Activities</x:String>
+      <x:String>UiPath.BAF.Activities</x:String>
+      <x:String>UiPath.BAF.Infrastructure.Contracts</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>ChatGPT_Activities</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CBC4E50AE12_openai_sub_deployments_sub_chat_sub_completions_Create.Bundle</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CBC4E50AE12_openai_sub_deployments_sub_chat_sub_completions_Create.Bundle</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>InternalLabs_TriggerEnableDisable_Activities</x:String>
+      <x:String>UiPath.IntegrationService.Infrastructure.Triggers</x:String>
+      <x:String>UiPath.IntegrationService.Infrastructure.CEQL</x:String>
+      <x:String>UiPath.Jira.IntegrationService.Activities</x:String>
+      <x:String>UiPath.IntegrationCore.Models</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="152">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>APITriggerIRPA</AssemblyReference>
+      <AssemblyReference>UiPath.Web</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DesktopTriggers.Activities</AssemblyReference>
+      <AssemblyReference>ChatGPT.Activities</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.AzureActiveDirectory</AssemblyReference>
+      <AssemblyReference>UiPath.AzureActiveDirectory.Activities</AssemblyReference>
+      <AssemblyReference>ConnectionClient</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>UiPath.BAF.Infrastructure</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Infrastructure</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftAzureOpenAI.IntegrationService.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CampaignMonitor.IntegrationService.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OpenAI.IntegrationService.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>CBC4E50AE12_openai_s.FllR01im1jH1iHriM4zVHBL</AssemblyReference>
+      <AssemblyReference>CBC4E50AE12_openai_s.FllR01im1jH1iHriM4zVHBL</AssemblyReference>
+      <AssemblyReference>InternalLabs.TriggerEnableDisable.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Jira.IntegrationService.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CampaignMonitor.IntegrationService</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftAzureOpenAI.IntegrationService</AssemblyReference>
+      <AssemblyReference>UiPath.OpenAI.IntegrationService</AssemblyReference>
+      <AssemblyReference>UiPath.Jira.IntegrationService</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="510.4,157.6" Id="NExtractData_1" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="433.6,160" Id="WriteRangeX_1" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="476.8,252.8" Id="Sequence_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="510.4,522.4" Id="ExcelApplicationCard_1" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="553.6,812.8" Id="Sequence_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="274.4,52.8" Id="NApplicationCard_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="317.6,142.4" Id="SequenceX_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="824,370.4" Id="ActivityBuilder_1" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="476.8,1023.2" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="sd:DataTable" Name="datatable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="data" />
+      <Variable x:TypeArguments="x:String" Name="z" />
+      <Variable x:TypeArguments="x:String" Name="out_AssistantAnswer_from_ChatGPT1" />
+      <Variable x:TypeArguments="x:String" Name="ques" />
+      <Variable x:TypeArguments="x:String" Name="API_val" />
+      <Variable x:TypeArguments="x:String" Name="str_json_inp" />
+      <Variable x:TypeArguments="x:Object" Name="doubt" />
+      <Variable x:TypeArguments="ue:IReadRangeRef" Name="changed_var" />
+      <Variable x:TypeArguments="njl:JObject" Name="a" />
+      <Variable x:TypeArguments="x:String" Name="Str_Json_Output" />
+      <Variable x:TypeArguments="x:String" Name="p" />
+      <Variable x:TypeArguments="uiascb:openai_sub_deployments_sub_chat_sub_completions_Create" Name="q" />
+      <Variable x:TypeArguments="x:String" Name="medical_dept" />
+      <Variable x:TypeArguments="uiascb:openai_sub_deployments_sub_chat_sub_completions_Create" Name="doubt1" />
+      <Variable x:TypeArguments="x:String" Name="doubt2" />
+      <Variable x:TypeArguments="x:String" Name="isemailsent" />
+      <Variable x:TypeArguments="x:String" Name="abc" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Document" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="f8ac6fb8-48ed-42e5-b93e-543d653e9905" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376.8,790.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="333.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter the dobubts here" Title="DOUBT SECTION">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:Object">[doubt]</OutArgument>
+              </ui:InputDialog.Result>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InputDialog>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter your Question??'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f8ac6fb8-48ed-42e5-b93e-543d653e9905" Text="[UiPathObjectExtensions.AsText(doubt)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://localhost:3000/doubts" CvElementArea="337, 447, 505, 116" CvType="InputBox" DesignTimeRectangle="341, 449, 496, 112" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'TEXTAREA question'" FullSelectorArgument="&lt;webctrl id='question' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='question' tag='TEXTAREA' type='' class='card-body' aaname='' /&gt;" Guid="14daeb98-3d62-4d37-8198-8133436a7c3b" InformativeScreenshot="4313242e0ab95491a92f22df697cc8e9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="365, 410, 195, 21" CvTextArgument="Enter your Question??" CvType="Text" DesignTimeRectangle="341, 388, 496, 61" ElementType="Text" FriendlyName="'Enter your Question??'" FullSelectorArgument="&lt;webctrl parentid='card_decor' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='card_decor' tag='DIV' type='' class='card-header' aaname='Enter your Question??' check:innerText='Enter your Question??' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ADD'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f8ac6fb8-48ed-42e5-b93e-543d653e9905" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://localhost:3000/doubts" CvElementArea="343, 565, 167, 58" CvTextArea="405, 585, 43, 18" CvTextArgument="ADD" CvType="Button" DesignTimeRectangle="349, 569, 158, 48" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'ADD'" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='btn btn-light' aaname='ADD' check:innerText='ADD' /&gt;" Guid="d52c0019-a2cf-4f17-a522-97dbc1d48905" InformativeScreenshot="b979baf72f612505ca67ec5547a1a6a2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Document' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="365, 410, 195, 21" CvTextArgument="Enter your Question??" CvType="Text" DesignTimeRectangle="341, 388, 496, 61" ElementType="Text" FriendlyName="'Enter your Question??'" FullSelectorArgument="&lt;webctrl parentid='card_decor' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='card_decor' tag='DIV' type='' class='card-header' aaname='Enter your Question??' check:innerText='Enter your Question??' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAA04SURBVGhDvZcLWNRVFsDHRCNNQURBBRweAvKQl4qI8hAVfILZw8eCVLupu5Vb5matin2tX2Uq5ItSFJ/V+ggf1dqmTpZWKoiSiiIwIA81VkbJEh28Z8+5/3v/8x8YUavd832/75x77p35/+6dO4Pqfo/oZNfWcZKrU/qbvu6ZucHeefmD+xlLh4aargzrD1eGDYDSmDDT8aggY164n+HNPu6Zid0cU9zs2+s7d+rk8PiE5LSc7JW7vvri83PFhfkNhGHfZ8U5q1fkTUwZn0prxGN+3yDp6e4us/JCfQ1SVMmaOl6OFS7HR3AuJSdAzftZrPLMqTtVF4qhNS6cPnlz4bzXsro5O7uIR/+2IPE5+p4ZF4aG1F+Jj2BcLC7cOpM4QlnbI2pffJZVFZ2wKdsaZwuPXx85PCFZaPy6mKPvgeLyapAQnahFjvdiw5l60lhfig3j41qcr1m2CKpKztoUvB8ulpxlL/55xrw2GELp/oLu64H+gYV0mhwSbJalKM9xmOPCBbQmAmrmvmBT6tfw5MTHnhZq944nXZynlQwJMamCKMUFVVGtrCA2HGqJmDBWGxPKaqanQtW50zZl8FQ5rdXNKT9bdDsmevAIoXj3eKW3a4aUlWLydElOyaFKxjma5/LYq40NEzkcqrZttinCBYVk5fkzUF16jkM1X9PKJuiXS2jajtkerhna05UyysmKOgYlMdcMFcJUY4/gc0j12Lh73nuSvFxZBsbiIg7VdxOX4Dxz6d6th9C1jidduk6r5VKa6yDGiqgQFFmRDqWNKPWQECZz9fxXbAoQJEmnfbmiFA7s3gavPjsJmQwHd2/nvcrzp1vdSOrkSTOEsiXoC1scFVzPBVGaJEhUe6qKNMpyUSVXy5pvIhSqMRNVe3cyWw8n5FUxni3i8jMmjITpE0bAa3+cAhXFP1itscWW9Wv3CW1LHI0MMFqdIglRLYS0mdfR/ZiUVRlChPBcdarA5sPl6VONX0r429NPwXPJw5EEePWZp/imaI7W3O1TOHPi2DWhrcTL7i4Z6ikSGnFrQZLTQJto1quSWYhokUKUjXjSP140wuF9eyHj+WdgIXLki0/hCvZoTrtW+x5E6ZlTjUJdp2vv3EH/7ktxltNEqSqEb0AVstQ0x7NkcDCrToqG6+uyofHEcTDX1gBF1YVzLR5MkBBx5WI5lJzMh0Of5cHW1cuQTDj0+S4oOZUPVyrL1XW23sPqE9DPCN8QsyEFToweYDk9K0EhHN1PIOsQuPR4Epe2FbXGCy0eTEJ0NWrLL8DeD3NhdupEfnWmp+AVIrCenTYRPvtoI3/93a4R/QOQy7fv2kEf/uFjEIHM/MdIVewinqq1tMJFSVQQM2W9A3caGoSuErUmBp+evAVrDY2QX1TZ4sEkRL/3pT8Uwl+nJPO7/8JTY634E27ipakpfI3V3wYN6t8CpxiP9NCtySxsawqEb50Anz8RKQSDGc+DJcFcmupKzNdyVgtlJfYW3oIZG27AgIxrMHDhdZ7f+Li6xYPpNEmqBL/g82dM46c9J/0JK6g3f0YaX0NrbX0C6s+o/6L4wtAtyYzkaSNpi5MUWSFdOYikMUuigqE+622hTSd+B6bnKuL9F16DAUh/qpGUpXUtHixlKF8oKuD33RY0p12rfQ/C3a2Xnl+fkM3jWQhuIGxLCoQilFdOj2aVgwIZnjQXprpCjKtTRjJ5bUh+XGaDKkxELLBA4z2Hylo8XArVlJ1vFe1aLT+e3gSOHR9y1HWOcEkO3ZwMzYleNx7OxASzikgSp00EAeWKyAD206e7uDzFc+t/QlGTBhRH6XBNL3lJHZSfaylP+X7QvoZTUgS3vh8KaaMc0nU9pwRmhmwaDwrJPNMG+m0ax95+YagqbYwMBOOgQKjGv5Yy9uCdJ1HbKJuQzNlYYxH4jTQUzATzt/6w9MXuWTrvuVGGfhvHQ/DGcUy7ieCNYxn1j44IBS4vuLrsLaEPMGbpdQibb7KAolbjZizecdGm0INgOrkQzEf8mPmIP+x8y22Xru+SBGO/jePAFsEbxrLJixKYcUBfVo4YBwbAzYJjXP7cpSYIRSmC5GTdOvUwfc0lOH/G9h+31qg+XwA3jk9F+T4o34c1HfGFsh2eRl3QhjGs3wYURoI5Y3lNfaqptyc5jG+gHDcgv7wHz96GEBTizBMZIVEla3vavgmGv1UHOw+2/GLfDfrC3vouCsyHfZj5cB+em474QN2/PE264NyxEJSLspjvRsLyJCjv78/KIvwYt8fIPngT+qG4RMpa9WzUfLOinrLiMryz/SIUFBnhUkUZ/72vPn8Caov3w5XTm5np5AL4+VgKkKz5sBdrOuwNTYd9+JjXmHWBuaNZEEpaMwaC1iNYB64fzQKQrGcHQVmEv7qB1Qd+UeW0BLcybj4ne/ReMkjUIivxUjjiTfNg/sYTPwHMWOv6rkw0BawfxQJJGKGacuC60XxM/YB1o9jA7CQ4FR2A/0ir5g/adaIRgv9eD0F/v8ozifCsrZtluTaIepr+AbyOPMzXuRTJmr/R40Y8cewpNoA19nhWat7T+SyOM5Ik0RdFVXHMEuoTc2dFwy/5R/mzavAPGAkpKHK2aT7Xcm1xbRN/T3btOy7VhHIkaMGDUc/S92BE6bZeRp3bX8LzAnJG4ykrsgE5o6zqvjlJjOB9XJe/Yw1/GEV6znUIRIFAlFLygzNyyTXxbgB3yt5Aud4oag3Kgvlrd5QmsBbj/ctdDDrXSQGZipwiyzcjxoT/2kTcAOUkRkzKTBaPA8gruAUBr1+FABThYE1SvHcP5Lq8gkbxbgBNx6JQ0A1PmwQpu5E0yfKxkgXYX/q8Q5bOIapXOkly0bVJQPDNrJUoPQVlfLT2lHgkwLS1DdAXRSQk1ff1/6ii2jnrNVfxtdfFu+D1ubJdigp6oXBPhLIbNPEejbH+RmH8EPtkXdtH7By53Jok8Fszkm/Cn9e4KcxaqEdrEj6aBg23bvAHV9ffgeGLTeCP0iTu/5qSLfVVtUdrZG/4uyaoxu8RRUPjDTz9SJJVRA/14DXlJm3m9BTzPZjepa2e/3PaffYAg/+aRCGaCH4fjER5HH8ge0qfj0Vv0bfZ/OEUtIk0PE2Sa4HYgJZUXEuvkXGtBO8+lyI5V8b5ugf1NGNX3EQP3KDSL8hxLuTyFI4JHrP8UEzi+/4IZhmPtOrzufeV3or8zUJBiU/yG2HYO/Xgi5J+iMyS1DXX4BPNnafYeWod1BvoeqjCGlxQWjtWaEJSE+2nCX2d7iF7O0efzHhTH5QjuKCQpOwroDnK2h59EnQFtFFc0wRfnrkFy7/8GVbs/xk3dtPqxCkaGn+CRUeyYfuevijVnU4Zs4uoXVCSakl3HHcH81fdGEFz6vWR4TTWK0NK+WajbPZw5ps9AmsEez5i7LMasxj3EfOxW6aynee+EGr3ju9rTkLs5qksNicGZVFM8pUzCiLquBtHyCNdaQOw7tVOuULbEvQpeC2Jq5difVYjlHk93GpM0uqY5sQ4bvMfYNHhbC5Y1XBZ6AKvqbf82CaIWJ+ivBZfV/El/qqoYs6YCU1toNpqjuPh8pD16cvoMsYrA0+YP8B7dQJTxXmWKGPvVTTPPxG1pr7PKgXqyazMa3vD2JwPw1HGCa8DiTmRqCJp6CJqwsk649yCdPsMoWs73OdGFkoJiZT3WZUg0M43H2t7cn0CeK0cxuWpDs+Og4p/45dRSHFBA0k6YU/JZoMj4z1DFxwjmEs/6lwuNO8edk72es93Y0zeKxNAQg/VZpJRcjyTYpQV4vmcpPnYe+UwyNzmj3JdUJbEHNltgwOOCUfRc2CUbx/szHtE3d7OJv3drk7z6DTQNd1zRTwj5EMVsF6BmcCxF2bLGmWOxmofM9Xa1w35IFpIWeSU2kEIO4BZzZ0Y1jwnR7dLEXr3F06jvBbSw23huTxOlVT7y+NbrJPocT29htj2Cf5TmcSkoKEziitZkX0UpTvRphSwnp/28EKh9WDhOEqfwcUQRULJhBTTv4f1ctpUPEedF2OZiUnr+nMhLU0GkrXumQ92ZLx/8FFYMK1d61/ae0WHIOcUj7eHmFBUFfF8Lx56vxeL8rGMatnzxDXUJ2hMr9GOK/bhlxLlSMyajkgH7HeE2wceYWakbk8HU1qiXbrQ+G1h18Ve77Yg0sgFs1A8S2Qcc0mse2fFIMqcijofw17eGKTIcdEOQJJcXOkp+cAjlOH4GvtCvUub+/vCPkg4JPXOkGIeKKXPiuWiHplUK1nWvTOVOSJ61SA8ffx1IVFFVmCvSpsPPMzqdrc3zU+z+3X3/X6DPo2uk/1ySZQktbgvHco34J45lM9hzftr/4n/DURBFCZphf0Pq3Xd7nb189PaZjh2bOMoHvO/D9rIowNc03u8ElFI4lx4WYyK0ouBwSsHkbwFEt/fniGwf1k7w/MT2876v4rbCtoMfdkdU7wyu80MNvScN9BIm3BbMoR9vL0XnrCdqWSrnXHHG3Z5S2a2zUxNbDPt95HW6f4L6GNIt4DdY84AAAAASUVORK5CYII=" InformativeScreenshot="2b55796068ead4b93764e4538164f95e.jpg" Selector="&lt;html app='chrome.exe' title='Document' /&gt;" Title="Document" Url="http://localhost:3000/doubts" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <isactr:ConnectorActivity Configuration="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" ConnectionId="e316140f-40fd-4f6e-8dda-36bc4e50ae12" DisplayName="Azure OpenAI Chat Completion" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="2a7ca00c-59a1-33c9-b8bc-f4593ea786a4">
+      <isactr:ConnectorActivity.Arguments>
+        <isactr:FieldArgument Name="prompt">
+          <isactr:FieldArgument.Argument>
+            <InArgument x:TypeArguments="x:String">[doubt.ToString]</InArgument>
+          </isactr:FieldArgument.Argument>
+        </isactr:FieldArgument>
+        <isactr:FieldArgument Name="model">
+          <isactr:FieldArgument.Argument>
+            <InArgument x:TypeArguments="x:String">gpt-4</InArgument>
+          </isactr:FieldArgument.Argument>
+        </isactr:FieldArgument>
+        <isactr:FieldArgument Name="instruction">
+          <isactr:FieldArgument.Argument>
+            <InArgument x:TypeArguments="x:String">Please give me the name of the medical department to whcih this doubt belongs strictly in one word. if it is not a medical doubt give me the output as none</InArgument>
+          </isactr:FieldArgument.Argument>
+        </isactr:FieldArgument>
+        <isactr:FieldArgument Name="out_text">
+          <isactr:FieldArgument.Argument>
+            <OutArgument x:TypeArguments="x:String">[doubt2]</OutArgument>
+          </isactr:FieldArgument.Argument>
+        </isactr:FieldArgument>
+        <isactr:FieldArgument Name="Jit_openai_sub_deployments_sub_chat_sub_completions">
+          <isactr:FieldArgument.Argument>
+            <OutArgument x:TypeArguments="uiascb:openai_sub_deployments_sub_chat_sub_completions_Create">[doubt1]</OutArgument>
+          </isactr:FieldArgument.Argument>
+        </isactr:FieldArgument>
+      </isactr:ConnectorActivity.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </isactr:ConnectorActivity>
+    <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_9">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[isemailsent]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">["0"]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <If Condition="[doubt2 = &quot;None&quot;]" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="If_7">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="476.8,296.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_10" Text="[&quot;Your doubt doesnt seem of medical background&quot;]" />
+          <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_10">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[isemailsent]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">["1"]</InArgument>
+            </Assign.Value>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Assign>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_22">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[doubt2 = &quot;None&quot;]" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="If_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="860.8,2408" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="817.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[doubt2.ToString]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:MessageBox>
+          <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="817.6,2192.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[string.Format(&quot;{0}\RPA\Doctors_database.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory))]">
+            <ueab:ExcelApplicationCard.Body>
+              <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="784,1923.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="740.8,1833.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                    <ueab:ExcelProcessScopeX.Body>
+                      <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="707.2,1747.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="664,1657.6" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" SaveAfterEachRow="False">
+                            <ueab:ExcelForEachRowX.Body>
+                              <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                <ActivityAction.Argument1>
+                                  <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                </ActivityAction.Argument1>
+                                <ActivityAction.Argument2>
+                                  <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                </ActivityAction.Argument2>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="630.4,1464.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If Condition="[CurrentRow.ByField(&quot;department&quot;) = doubt2]" sap:VirtualizedContainerService.HintSize="587.2,1375.2" sap2010:WorkflowViewState.IdRef="If_1">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If.Then>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="553.6,1109.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <umab:GmailApplicationCard Account="{x:Null}" ClientId="{x:Null}" ClientSecret="{x:Null}" EmailAddress="{x:Null}" ConnectionAccountName="medicalconsultancy13579@gmail.com" ConnectionId="844dc031-029a-4be3-b16b-fc4e577a1a45" DisplayName="Use Gmail" sap:VirtualizedContainerService.HintSize="510.4,1020" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="True">
+                                          <umab:GmailApplicationCard.Body>
+                                            <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                                              <ActivityAction.Argument>
+                                                <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+                                              </ActivityAction.Argument>
+                                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476.8,836.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[isemailsent]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">["1"]</InArgument>
+                                                  </Assign.Value>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </Assign>
+                                                <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="433.6,369.6" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="A doubt for you has come to us" To="[CurrentRow.ByField(&quot;Email_id&quot;)]" UseDocumentAsBody="False">
+                                                  <umab:SendMailX.Files>
+                                                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                                  </umab:SendMailX.Files>
+                                                  <umab:SendMailX.HtmlBodyFromFile>
+                                                    <umabh:HtmlContentArgument FilePath="{x:Null}" HtmlBody="&lt;HTML&gt;&lt;HEAD&gt;&#xA;&lt;STYLE type=text/css&gt;&#xA;        body {&#xA;            font-family: Calibri;&#xA;        }&#xA;&#xA;        p {&#xA;            margin: 0;&#xA;        }&#xA;&#xA;        .mapping {&#xA;            background-color: #D3D4D7;&#xA;            color: black;&#xA;            padding: 1px;&#xA;        }&#xA;    &lt;/STYLE&gt;&#xA;&lt;!-- Instruct the web browser control to use IE 6 to render the page. --&gt;&#xA;&lt;META content=IE=6 http-equiv=X-UA-Compatible&gt;&lt;/HEAD&gt;&#xA;&lt;BODY&gt;&#xA;&lt;P&gt;Hi &lt;SPAN class=mapping contentEditable=false&gt;{{Value}}&lt;/SPAN&gt;,&lt;/P&gt;&#xA;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&#xA;&lt;P&gt;We have a query for&amp;nbsp;you and that needs to be resolved.The query is&amp;nbsp;&quot;&amp;nbsp;&lt;SPAN class=mapping contentEditable=false&gt;{{Value1}}&lt;/SPAN&gt;&quot; . &lt;/P&gt;&#xA;&lt;P&gt;&amp;nbsp;&lt;/P&gt;&#xA;&lt;P&gt;Regards Bot&lt;/P&gt;&lt;/BODY&gt;&lt;/HTML&gt;">
+                                                      <umabh:HtmlContentArgument.RuntimeImages>
+                                                        <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                                      </umabh:HtmlContentArgument.RuntimeImages>
+                                                      <umabh:HtmlContentArgument.ValueMappings>
+                                                        <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="4">
+                                                          <umabh:HtmlTextValueMapping Name="Value" Value="[CurrentRow.ByField(&quot;Name&quot;)]" />
+                                                          <umabh:HtmlTextValueMapping Name="Value1" Value="[doubt]" />
+                                                        </scg:List>
+                                                      </umabh:HtmlContentArgument.ValueMappings>
+                                                    </umabh:HtmlContentArgument>
+                                                  </umab:SendMailX.HtmlBodyFromFile>
+                                                </umab:SendMailX>
+                                                <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="433.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_12" Text="[&quot;Your doubt has reached our experts, we will get back to you soon&quot;]" />
+                                              </Sequence>
+                                            </ActivityAction>
+                                          </umab:GmailApplicationCard.Body>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </umab:GmailApplicationCard>
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </ActivityAction>
+                            </ueab:ExcelForEachRowX.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ueab:ExcelForEachRowX>
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelProcessScopeX.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ueab:ExcelProcessScopeX>
+                </Sequence>
+              </ActivityAction>
+            </ueab:ExcelApplicationCard.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ueab:ExcelApplicationCard>
+        </Sequence>
+      </If.Else>
+    </If>
+    <If Condition="[isemailsent = &quot;0&quot;]" sap:VirtualizedContainerService.HintSize="433.6,440.8" sap2010:WorkflowViewState.IdRef="If_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="376.8,175.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;We dont have experts for your doubt , we will get back to you soon&quot;]" />
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_18">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </If.Else>
+    </If>
+  </ueab:SequenceX>
+</Activity>

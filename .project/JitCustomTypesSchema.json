@@ -1,0 +1,195 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "5+4XdkEryn1CLkMKmpoTmU5lJTddFYCZUUaOueSXdcph91VwFVm18R5YqMubztlAmhZeG71xW5o6R0LenxMm6A==",
+        "bundleName": "CBC4E50AE12_openai_sub_deployments_sub_chat_sub_completions_Create",
+        "entitiesBundle": {
+          "Types": {
+            "message": {
+              "name": "message",
+              "properties": [
+                {
+                  "name": "content",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "role",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            },
+            "choices": {
+              "name": "choices",
+              "properties": [
+                {
+                  "name": "index",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Int64, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "finish_reason",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "message",
+                  "type": {
+                    "definitionName": "message"
+                  }
+                }
+              ],
+              "baseType": null
+            },
+            "usage": {
+              "name": "usage",
+              "properties": [
+                {
+                  "name": "total_tokens",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Int64, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "prompt_tokens",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Int64, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "completion_tokens",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Int64, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                }
+              ],
+              "baseType": null
+            },
+            "openai_sub_deployments_sub_chat_sub_completions_Create": {
+              "name": "openai_sub_deployments_sub_chat_sub_completions_Create",
+              "properties": [
+                {
+                  "name": "created",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.Int64, System.Private.CoreLib]], System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "model",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "id",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "_object",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "Newtonsoft.Json.JsonPropertyAttribute, Newtonsoft.Json"
+                        },
+                        "constructorArguments": [],
+                        "namedArguments": [
+                          {
+                            "name": "PropertyName",
+                            "value": {
+                              "Value": "\"object\"",
+                              "type": {
+                                "ClrType": "System.String, System.Private.CoreLib"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "text",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.CategoryAttribute, System.ComponentModel.Primitives"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "\"Simplified\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      },
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.DataAnnotations.DisplayAttribute, System.ComponentModel.Annotations"
+                        },
+                        "constructorArguments": [],
+                        "namedArguments": [
+                          {
+                            "name": "Order",
+                            "value": {
+                              "Value": "1",
+                              "type": {
+                                "ClrType": "System.Int32, System.Private.CoreLib"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "choices",
+                  "type": {
+                    "definitionName": "choices"
+                  },
+                  "isCollection": true
+                },
+                {
+                  "name": "usage",
+                  "type": {
+                    "definitionName": "usage"
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.CBC4E50AE12_openai_sub_deployments_sub_chat_sub_completions_Create",
+        "hash": "NSs0WGRrRXJ5bjFDTGtNS21wb1RtVTVsSlRkZEZZQ1pVVWFPdWVTWGRjcGg5MVZ3RlZtMThSNVlxTXVienRsQW1oWmVHNzF4VzVvNlIwTGVueE1tNkE9PQ",
+        "assemblyName": "CBC4E50AE12_openai_s.FllR01im1jH1iHriM4zVHBL"
+      }
+    }
+  ]
+}

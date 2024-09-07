@@ -1,0 +1,13 @@
+{
+  "assemblyStates": {
+    "CBC4E50AE12_openai_s.FllR01im1jH1iHriM4zVHBL": {
+      "namespace": "UiPath.IntegrationService.Activities.SWEntities.CBC4E50AE12_openai_sub_deployments_sub_chat_sub_completions_Create.Bundle",
+      "providerName": "CustomEntities",
+      "key": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.CBC4E50AE12_openai_sub_deployments_sub_chat_sub_completions_Create",
+        "hash": "NSs0WGRrRXJ5bjFDTGtNS21wb1RtVTVsSlRkZEZZQ1pVVWFPdWVTWGRjcGg5MVZ3RlZtMThSNVlxTXVienRsQW1oWmVHNzF4VzVvNlIwTGVueE1tNkE9PQ",
+        "assemblyName": "CBC4E50AE12_openai_s.FllR01im1jH1iHriM4zVHBL"
+      }
+    }
+  }
+}

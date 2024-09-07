@@ -1,0 +1,71 @@
+{
+  "name": "scraping_chatgpt",
+  "projectId": "fb17d4ae-71be-420f-9ed2-6cbde93b1d85",
+  "description": "Blank Task",
+  "main": "Main.xaml",
+  "dependencies": {
+    "ChatGPT.Activities": "[1.0.2]",
+    "EnhancedTimerTrigger.Activities": "[2.0.0]",
+    "InternalLabs.TriggerEnableDisable.Activities": "[1.0.0]",
+    "InternalLabs.UpdateTimeTriggers.Activities": "[1.0.5]",
+    "RunAPITrigger.Activities": "[1.0.0]",
+    "UiPath.AzureActiveDirectory.Activities": "[1.4.1]",
+    "UiPath.CampaignMonitor.IntegrationService.Activities": "[5.0.2]",
+    "UiPath.ComplexScenarios.Activities": "[1.5.0]",
+    "UiPath.DesktopTriggers.Activities": "[1.0.0]",
+    "UiPath.Excel.Activities": "[2.22.2]",
+    "UiPath.IntegrationService.Activities": "[1.1.0]",
+    "UiPath.Jira.IntegrationService.Activities": "[6.1.0]",
+    "UiPath.Mail.Activities": "[1.21.2]",
+    "UiPath.MicrosoftAzureOpenAI.IntegrationService.Activities": "[7.1.0]",
+    "UiPath.OpenAI.IntegrationService.Activities": "[6.1.0]",
+    "UiPath.Presentations.Activities": "[1.12.2]",
+    "UiPath.System.Activities": "[23.10.4]",
+    "UiPath.UIAutomation.Activities": "[23.10.8]",
+    "UiPath.WebAPI.Activities": "[1.18.0]",
+    "UiPath.Word.Activities": "[1.18.1]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.10.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Business",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": true,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
